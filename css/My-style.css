@@ -1,4 +1,57 @@
 *{
     margin:0;
     padding: 0;
+    box-sizing: border-box;
+}
+header{
+    border-bottom: 1px solid #c3c3c3;
+}
+.header-nav{
+    width: 1120px;   /*Странно, но ширина шапки немного больше ширины контейнера 570+282+261=1113*/
+    height: 72px;
+    margin: 0 auto;
+}
+.header-nav nav{
+    padding: 16px 0px;
+}
+.nav-left{
+    margin: 0 28px;
+    font-size: 14px;
+    vertical-align: middle;
+    font-family: 'Manrope-Bold' , sans-serif;
+}
+.nav-left:first-child{
+    margin: 0;
+}
+.header-nav a{
+    color:#010101;
+    text-decoration: none;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.dropdown-options{
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.header-badge{
+    display: inline-block;
+    margin-left: 166px;  /*Номинально 276, как не крутился, не смог осознать, как достигнуть такого огромного отступа*/
+}
+.nav-right{
+    vertical-align: middle;
+}
+.nav-right:first-child{
+    margin-right: 8px;
+}
+
+
+
+
+
+.container{
+    width: 1110px 
 }
