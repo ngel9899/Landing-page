@@ -15,14 +15,12 @@ header{
     padding: 16px 0px;
 }
 .nav-left{
-    margin: 0 28px;
+    margin-right: 28px;
     font-size: 14px;
     vertical-align: middle;
     font-family: 'Manrope-Bold' , sans-serif;
 }
-.nav-left:first-child{
-    margin: 0;
-}
+
 .header-nav a{
     color:#010101;
     text-decoration: none;
@@ -39,7 +37,7 @@ header{
 }
 .header-badge{
     display: inline-block;
-    margin-left: 166px;  /*Номинально 276, как не крутился, не смог осознать, как достигнуть такого огромного отступа*/
+    margin-left: 276px;  /*Осознал ошибку*/
 }
 .nav-right{
     vertical-align: middle;
