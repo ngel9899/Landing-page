@@ -15,7 +15,7 @@
     font-style: normal;
 }
 @font-face {
-    font-family: 'Manrope-Regula';
+    font-family: 'Manrope-Regular';
     src: local('Manrope-Regular'),
         url('Manrope-Regular.woff2') format('woff2'),
         url('Manrope-Regular.woff') format('woff'),
