@@ -34,6 +34,13 @@ header{
     display: none;
     position: absolute;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100px;
+}
+.dropdown-options a{
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 .header-badge{
     display: inline-block;
@@ -76,7 +83,6 @@ header{
     font-family: 'Manrope-Regular', sans-serif;
     font-size: 18px;
     line-height: 32px
-    padding-top:16px;
 }
 .landing-page-btv{
     color: #ffffff;
@@ -97,24 +103,47 @@ header{
 
 .landing-page-img-top{
     position: relative;
-    bottom: 368px;
-    right: 190px;
+    bottom: 342px;
+    right: 109px;
+    width: 280px;
 }
 .landing-page-img-bot{
     position: relative;
-    right: -62px;
-    bottom:283px;
+    right: -77px;
+    bottom: 231px;
+    width: 280px;
 }
 .landing-page-img-iphone{
     width: 250px; /*Если ставить ширину как по ТЗ, то картинка мылится*/
+
+}
+.landing-page-img:before{
+   position: absolute;
+    content: "";
+    width: 320px; 
+    height: 320px;
+    border-radius: 50%;
     z-index: 1;
+    bottom: 36px;
+    right: 245px; 
 }
 .landing-page-img:after{
-    position: relative;
-    width: 400px;
-    height: 400px;
+    position: absolute; /*Все же практичнее relative отдельным дивом, поскольку при абсолюте картинка плывет от любого изменения*/
+    content: "";
+    width: 320px; /*Заявленные 400х400 выходит слишком много, поэтому подобрал на глаз. Не подскажите, с чем это связано, такое различие размеров? Предполангаю что это я не до конца понимаю данную систему.*/
+    height: 320px;
     border-radius: 50%;
-    background-color: #fd0006;
+    background-color: #f1e4ff;
     z-index: -1;
+    bottom: 36px;
+    right: 245px;
+
 }
-/*#f1e4ff*/
+
+.dropdown-options a:hover{
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-options{
+    display: block;
+}
