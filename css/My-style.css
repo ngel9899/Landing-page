@@ -92,6 +92,7 @@ header{
     border: 0;
     margin-top: 32px;
     background-color:#8c30f5;
+    outline: none;
 }
 .landing-page-img{
     vertical-align: top;
@@ -115,17 +116,8 @@ header{
 }
 .landing-page-img-iphone{
     width: 250px; /*Если ставить ширину как по ТЗ, то картинка мылится*/
+    border-radius: 0 0 35% 35%;
 
-}
-.landing-page-img:before{
-   position: absolute;
-    content: "";
-    width: 320px; 
-    height: 320px;
-    border-radius: 50%;
-    z-index: 1;
-    bottom: 36px;
-    right: 245px; 
 }
 .landing-page-img:after{
     position: absolute; /*Все же практичнее relative отдельным дивом, поскольку при абсолюте картинка плывет от любого изменения*/
@@ -147,3 +139,23 @@ header{
 .dropdown:hover .dropdown-options{
     display: block;
 }
+
+.landing-page-btv:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #8d0fde;
+}
+
+
+
+
+.Example{
+    position: relative;
+    content: "";
+    width: 320px; 
+    height: 320px;
+    border-radius: 50%;
+    background-color: #f1e4ff;
+    z-index: -1;
+    bottom: 577px;
+    left: 783px;
+} /*Более практичный пример с задним фоном, на тот случай если абсолют поплывет, как это должно выглядеть. Данный див создал бы в блоке с картинкой.*/
