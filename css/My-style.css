@@ -7,7 +7,7 @@ header{
     border-bottom: 1px solid #c3c3c3;
 }
 .header-nav{
-    width: 1120px;   /*Странно, но ширина шапки немного больше ширины контейнера 570+282+261=1113*/
+    width: 1115px;   /*Странно, но ширина шапки немного больше ширины контейнера 570+282+261=1113*/
     height: 72px;
     margin: 0 auto;
 }
@@ -41,15 +41,80 @@ header{
 }
 .nav-right{
     vertical-align: middle;
-}
-.nav-right:first-child{
     margin-right: 8px;
 }
-
-
-
-
+/*.nav-right:last-child{
+    margin:0;
+    Почему-то применяется к обоим элементам одновременно
+}*/
+.last{
+    margin: 0;
+}
 
 .container{
-    width: 1110px 
+    width: 1115px /*Основной контeйнер установил по размерам шапки, чтобы визуально выглядело хорошо*/
 }
+.landing{
+    margin-top: 221px;
+}
+.landing-page{
+    vertical-align: top;
+    display: inline-block;
+    margin-left: -4px;
+    padding-left:120px;
+}
+.landing-page-block{
+    width: 540px;
+}
+
+.title{
+    font-family: 'Manrope-ExtraBold', sans-serif;
+    font-size: 72px;
+    line-height: 98px;
+}
+.landing-page-text{
+    font-family: 'Manrope-Regular', sans-serif;
+    font-size: 18px;
+    line-height: 32px
+    padding-top:16px;
+}
+.landing-page-btv{
+    color: #ffffff;
+    font-size: 20px;
+    padding: 16px 40px;
+    border-radius: 10px;
+    border: 0;
+    margin-top: 32px;
+    background-color:#8c30f5;
+}
+.landing-page-img{
+    vertical-align: top;
+    display: inline-block;
+    width: 400px;
+    margin-left: -4px;
+    padding:56px 0 0 167px;
+}
+
+.landing-page-img-top{
+    position: relative;
+    bottom: 368px;
+    right: 190px;
+}
+.landing-page-img-bot{
+    position: relative;
+    right: -62px;
+    bottom:283px;
+}
+.landing-page-img-iphone{
+    width: 250px; /*Если ставить ширину как по ТЗ, то картинка мылится*/
+    z-index: 1;
+}
+.landing-page-img:after{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: #fd0006;
+    z-index: -1;
+}
+/*#f1e4ff*/
